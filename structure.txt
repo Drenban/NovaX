@@ -2,7 +2,7 @@ NovaX/
 ├── images/                        
 │
 ├── model/                         
-│   ├── minimind_tokenizer/        
+│   ├── tokenizer/        
 │   │   ├── merges.txt
 │   │   ├── tokenizer.json
 │   │   ├── tokenizer_config.json
