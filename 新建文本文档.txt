@@ -1,0 +1,36 @@
+NovaX/
+├── images/                        
+│
+├── model/                         
+│   ├── minimind_tokenizer/        
+│   │   ├── merges.txt
+│   │   ├── tokenizer.json
+│   │   ├── tokenizer_config.json
+│   │   └── vocab.json
+│   ├── dataset.py                
+│   ├── LMConfig.py               
+│   ├── model.py                   
+│   └── model_lora.py              
+│
+├── scripts/                       
+│   ├── chat_openai_api.py         
+│   ├── convert_model.py          
+│   ├── serve_openai_api.py       
+│   ├── train_tokenizer.py         
+│   └── web_demo.py                
+│
+├── .gitignore                    
+├── CODE_OF_CONDUCT.md             
+├── eval_model.py                 
+├── LICENSE                       
+├── README.md                      
+├── README_en.md                   
+├── requirements.txt              
+│
+├── train_distill_reason.py       
+├── train_distillation.py          
+├── train_dpo.py                  
+├── train_full_sft.py              
+├── train_lora.py                  
+├── train_pretrain.py             
+└── 其他文件
