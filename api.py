@@ -39,8 +39,14 @@ class MiniMindChat:
 
 # 路径配置
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "models", "minimind.pth")  # 模型存放路径
+MODEL_PATH = os.path.join(BASE_DIR, "models", "minimind.pth")  # 模型存放在 models/
 TOKENIZER_PATH = os.path.join(BASE_DIR, "novax", "model", "minimind_tokenizer")
+
+# 检查路径是否存在
+if not os.path.exists(MODEL_PATH):
+    raise FileNotFoundError(f"Model file not found at {MODEL_PATH}. Please run training or provide a .pth file.")
+if not os.path.exists(TOKENIZER_PATH):
+    raise FileNotFoundError(f"Tokenizer directory not found at {TOKENIZER_PATH}. Please run scripts/train_tokenizer.py.")
 
 minimind = MiniMindChat(MODEL_PATH, TOKENIZER_PATH)
 
